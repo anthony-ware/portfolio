@@ -1,0 +1,259 @@
+body{
+	text-rendering: optimizeLegibility;
+}
+
+//STYLE VARIABLES
+//LINK FONT
+//TITLE FONT
+//PARAGRAPH FONT
+//NAVIGATION MENU
+
+
+#landing{
+	width:100%;
+	height:100vh;
+	background:linear-gradient(rgba(96, 125, 139, 0.41),rgba(49,61,65,0.4)),url(../img/bg.jpg) no-repeat center center;
+	background-size:cover;
+}
+.navigation{
+	// background-color:black;
+	color:white;
+	font-size: 20px;
+	list-style:none;
+	.hamburger-nav{
+		list-style: none;
+		position:absolute;
+		display: inline-block;
+		font-size: 24px;
+		visibility:hidden;
+	}
+	.open{
+		display: none;
+		list-style: none;
+		background:#666;
+		height: 0vh;
+		margin-left: 0;
+
+		.menu-items{
+			margin-top:25%;
+			li{
+				margin-bottom:40px;
+			}
+		}
+	}
+	.close{
+		display: inline-block;
+		position:absolute;
+		top: -2px;
+		left: 253px;
+	}
+
+	.nav-items{
+		text-align: right;
+		font-family: 'Josefin Sans', sans-serif ;
+
+		margin-right:50px;
+		margin-left:10px;
+		ul{
+			list-style: none;
+		}
+		li{
+			display: inline-block;
+			padding:10px;
+
+		}
+		li:hover{
+			color:#bdc3c7;
+		}
+	}
+}
+//LANDING PAGE
+.hero{
+	display:table;
+	width:100%;
+	height:92%;
+
+	.hero-text{
+		font-size:48px;
+		vertical-align: middle;
+		display: table-cell;
+		text-align:center;	
+		h2,
+		h3{
+			font-family:'Revalia', cursive;
+			color: #fff; 
+		}	
+	}
+	.learn-more{
+		text-align: center;
+		color:#bdc3c7;
+		font-family:'Josefin Sans', sans-serif; 
+		position: absolute;
+		bottom: 2.5%;
+		left: 0;
+		right: 0;
+		font-size: 24px;
+		a:hover{
+			color:#bdc3c7;
+		}
+		.arrow{
+			font-size: 48px;
+			line-height: 0.7;
+		}
+	}
+
+}
+
+//SKILLS SECTION
+#skills{
+	text-align:center;
+	background: linear-gradient(rgba(255,255,255,0.9),rgba(255,255,255,0.7)), url(../img/seamless_paper_texture.png);
+	.skills-container{
+		
+		max-width: 1136px;
+		margin-left:auto;
+		margin-right: auto;
+
+		h2,
+		h4{
+			margin-bottom:60px;
+			margin-top: 60px;
+			font-family: 'Montserrat', sans-serif;
+		}
+
+		.skill-card{
+			i{
+				font-size: 72px;
+			}
+		}
+		
+
+	}
+}
+
+//ABOUT SECTION
+#about{
+	p{
+		text-align:center;
+		padding:50px;
+		margin-top: 16px;
+		font-size: 20px;
+		font-family: 'Montserrat', sans-serif;
+	}
+}
+
+#gallery{
+	display:inline-block;
+	background: linear-gradient(rgba(255,255,255,0.7),rgba(255,255,255,0.9)), url(../img/seamless_paper_texture.png);
+	width:100%;
+	margin-right:auto;
+	margin-left:auto;
+
+	.project{
+		display: inline-block;
+		padding:0;
+		
+		
+
+		.overlay{
+			position:relative;
+			overflow: hidden;
+			background-color:#202020;
+		}
+		.overlay-text{
+			height: 100%;
+			width: 100%;
+			position:absolute;
+			z-index: 1;
+			top:0;
+			padding:15px 20px;
+			display: none;
+			color:#eee;
+			h2,
+			p{
+				font-family: 'Montserrat', sans-serif;
+
+			}
+
+		}
+
+	}
+
+
+
+	.project:hover img{
+		opacity: 0.3;
+
+	}
+	.project:hover div{
+		display: block;
+	}
+
+}
+#contact-banner{
+	background:url(../img/seamless_paper_texture.png);
+	.more{
+		border:1px solid black;
+		padding:0;
+		margin:0 auto;
+		margin-bottom:50px;
+		transition: background 0.4s ease-in-out;
+		border-radius:10px;
+	}
+	p.more:hover{
+		background:#2ba6cb;
+		// border:2px solid black;
+	}
+	a{
+		color:#000;
+	}
+	p{
+		text-align:center;
+		padding:50px;
+		margin-top: 16px;
+		font-size: 20px;
+	}
+	h2{
+		text-align: center;
+		padding:10px;
+	}
+
+}
+
+footer{
+	background-color: #292c2f;
+  	text-align: center;
+  	font-size: 1.2rem;
+  	padding: 65px;
+  	font-family:'Josefin Sans', sans-serif; 
+
+  	a{
+  		padding-right:20px;
+  	}
+
+  	a:hover{
+		color:#bdc3c7;
+	}
+	p{
+		color: #bdc3c7;
+	}
+}
+
+
+//NAVIGATION STYLE TOGGLE
+@media only screen and (min-width:320px)and(max-width:1000px) {
+/* Styles */
+	.navigation{
+		.hamburger-nav{
+			visibility:visible;
+	
+		}
+		.nav-items{
+			visibility: hidden;
+		}
+	}
+
+}
+
+
+
